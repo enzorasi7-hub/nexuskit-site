@@ -3,4 +3,4 @@ const path = require("path");
 const app = express();
 app.use(express.static("."));
 app.get("/{*splat}", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
-app.listen(5002, "0.0.0.0", () => console.log("listening on 5002"));
+app.listen(5001, "0.0.0.0", () => console.log("listening on 5001"));
